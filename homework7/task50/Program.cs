@@ -38,7 +38,7 @@ int I = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите номер столбца");
 int J = Convert.ToInt32(Console.ReadLine());
 
-if ( I > MyMatrix.GetLength(0) && J > MyMatrix.GetLength(1))
+if ( I > MyMatrix.GetLength(0) || J > MyMatrix.GetLength(1))
 {
     Console.WriteLine("Такого элемента не существует");
 }
@@ -47,7 +47,6 @@ else
 {
     Console.WriteLine(MyMatrix[I-1,J-1]);
 }
-
 
 
 
